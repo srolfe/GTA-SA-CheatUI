@@ -129,6 +129,18 @@ document.getElementById("modSaveBut").addEventListener("click", writeStats, fals
 document.getElementById("maxMoney").addEventListener("click", function(){
 	document.getElementById("curMoney").value="999999999";
 }, false);
+document.getElementById("maxCurHealth").addEventListener("click", function(){
+	document.getElementById("curHealth").value="255";
+}, false);
+document.getElementById("maxMaxHealth").addEventListener("click", function(){
+	document.getElementById("maxHealth").value="255";
+}, false);
+document.getElementById("maxCurArmor").addEventListener("click", function(){
+	document.getElementById("curArmor").value="255";
+}, false);
+document.getElementById("maxMaxArmor").addEventListener("click", function(){
+	document.getElementById("maxArmor").value="255";
+}, false);
 },{"__browserify_Buffer":2}],2:[function(require,module,exports){
 require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"PcZj9L":[function(require,module,exports){
 var TA = require('typedarray')

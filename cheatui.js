@@ -128,3 +128,15 @@ document.getElementById("modSaveBut").addEventListener("click", writeStats, fals
 document.getElementById("maxMoney").addEventListener("click", function(){
 	document.getElementById("curMoney").value="999999999";
 }, false);
+document.getElementById("maxCurHealth").addEventListener("click", function(){
+	document.getElementById("curHealth").value="255";
+}, false);
+document.getElementById("maxMaxHealth").addEventListener("click", function(){
+	document.getElementById("maxHealth").value="255";
+}, false);
+document.getElementById("maxCurArmor").addEventListener("click", function(){
+	document.getElementById("curArmor").value="255";
+}, false);
+document.getElementById("maxMaxArmor").addEventListener("click", function(){
+	document.getElementById("maxArmor").value="255";
+}, false);
