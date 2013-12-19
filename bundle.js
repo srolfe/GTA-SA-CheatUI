@@ -93,8 +93,7 @@ function calculateSum(){
 function writeChecksum(){
 	save.data.writeUInt32LE(calculateSum(), save.data.length - 4);
 	
-	var blobDat=[save.data.buffer];
-	var blob = new Blob(blobDat);
+	var blob = new Blob([save.data.buffer]);
 	saveAs(blob, save.name)
 }
 
@@ -127,6 +126,9 @@ dropZone.addEventListener('dragover', handleDragOver, false);
 dropZone.addEventListener('drop', handleFileSelect, false);
 
 document.getElementById("modSaveBut").addEventListener("click", writeStats, false);
+document.getElementById("maxMoney").addEventListener("click", function(){
+	document.getElementById("curMoney").value="999999999";
+}, false);
 },{"__browserify_Buffer":2}],2:[function(require,module,exports){
 require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"PcZj9L":[function(require,module,exports){
 var TA = require('typedarray')

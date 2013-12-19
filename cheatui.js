@@ -125,3 +125,6 @@ dropZone.addEventListener('dragover', handleDragOver, false);
 dropZone.addEventListener('drop', handleFileSelect, false);
 
 document.getElementById("modSaveBut").addEventListener("click", writeStats, false);
+document.getElementById("maxMoney").addEventListener("click", function(){
+	document.getElementById("curMoney").value="999999999";
+}, false);
