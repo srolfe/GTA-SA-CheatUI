@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GTA: SA [iOS] CheatUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+			
+		<style type="text/css">
+			#drop_zone{
+		   		height: 100px;
+		    	line-height: 60px;
+			}
+
+			.container{
+		    	max-width:800px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h3>CheatUI <small>GTA: SA [iOS]</small></h3>
+			<div id="drop_zone" class="well text-center lead">
+				<span class="glyphicon glyphicon-floppy-disk text-info"></span> Drop Save File Here
+			</div>
+
+			<output id="list" class="text-primary text-center"></output>
+
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+				</div>
+			</div>
+
+			<div class="input-group input-group-lg has-success">
+				<span class="input-group-addon" style="background-color:#3E8C29;border:1px solid #275E18"><span class="glyphicon glyphicon-usd" style="color:#fff"></span></span>
+				<input type="text" style="border:1px solid #275E18" class="form-control" placeholder="Money" id="curMoney">
+				<span class="input-group-btn">
+					<button class="btn btn-success" type="button">Max</button>
+				</span>
+			</div>
+
+			<br />    
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="input-group input-group-lg has-error">
+						<span class="input-group-addon" style="background-color:#C93232;border:1px solid #851919"><span class="glyphicon glyphicon-user" style="color:#fff"></span></span>
+						<input type="text" style="border:1px solid #851919" class="form-control" placeholder="Current Health" id="curHealth">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="input-group input-group-lg has-error">
+						<span class="input-group-addon" style="background-color:#C93232;border:1px solid #851919"><span class="glyphicon glyphicon-user" style="color:#fff"></span></span>
+						<input type="text" style="border:1px solid #851919" class="form-control" placeholder="Max Health" id="maxHealth">
+					</div>
+				</div>
+			</div>
+
+			<br />
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" style="background-color:#3271C9;border:1px solid #19437D"><span class="glyphicon glyphicon-user" style="color:#fff"></span></span>
+						<input type="text" style="border:1px solid #19437D" class="form-control" placeholder="Current Armor" id="curArmor">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="input-group input-group-lg">
+						<span class="input-group-addon" style="background-color:#3271C9;border:1px solid #19437D"><span class="glyphicon glyphicon-user" style="color:#fff"></span></span>
+						<input type="text" style="border:1px solid #19437D" class="form-control" placeholder="Max Armor" id="maxArmor">
+					</div>
+				</div>
+			</div>
+
+			<br />
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Additional Cheats</h3>
+				</div>
+				<div class="row panel-body">
+					<div class="col-md-1">
+					</div>
+					<div class="col-md-4 lead text-center">
+						<input type="checkbox" id="infRunCheat" value="option2"> <span class="glyphicon glyphicon-flash" style="color:#F7CA16"></span> Infinite Run
+					</div>
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-4 lead text-center">
+						<input type="checkbox" id="fireProofCheat" value="option2"> <span class="glyphicon glyphicon-fire" style="color:#C93232"></span> Fire Proof
+					</div>
+					<div class="col-md-1">
+					</div>
+				</div>
+			</div>
+
+			<button type="button" id="modSaveBut" class="btn btn-primary btn-lg btn-block">Modify Save</button>
+
+		</div>
+		
+		<script type="text/javascript" src="bundle.js"></script>
+	</body>
+</html>
