@@ -93,10 +93,8 @@ function calculateSum(){
 function writeChecksum(){
 	save.data.writeUInt32LE(calculateSum(), save.data.length - 4);
 	
-	console.log(save.data);
-	console.log(save.data.buffer);
-	
-	var blob = new Blob([save.data]);
+	var blobDat=[save.data.buffer];
+	var blob = new Blob(blobDat);
 	saveAs(blob, save.name)
 }
 
