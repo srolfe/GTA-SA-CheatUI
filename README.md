@@ -5,7 +5,7 @@ My buddy and I went pretty hard into GTA:SA iOS when it hit. He was using a hack
 
 Of course, I eventually became jealous and utilized existing documentation of GTA:SA save files to manipulate my game file on-demand.
 
-The software is available online at: http://chewmieser.github.io/GTA-SA-CheatUI/
+The software is available online at: http://srolfe.github.io/GTA-SA-CheatUI/
 
 History
 -------
